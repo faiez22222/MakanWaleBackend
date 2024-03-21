@@ -43,7 +43,7 @@ const ArchitectureDataModel = require('./models/ArchitectureFormDesign')
 const contactRoutes = require('../server/routes/ContactFormRoutes')
 const contactRoutesBelow720 = require('../server/routes/ContactFormBelow720Routes')
 const interiorRoutes = require('../server/routes/interiorCalculator')
-// const io = initializeSocket(server);
+ // const io = initializeSocket(server);
 
 const corsOptions = {
   origin: '*',
@@ -55,9 +55,6 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.options('*', cors(corsOptions));
 app.use(express.static('upload'))
-
-
-
 // // MIDLEWARES ->>
 // app.use(cors()); // <- CORS configuration, in case if you wanted to implemented authorization
 // //app.options(process.env.REMOTE, cors());
