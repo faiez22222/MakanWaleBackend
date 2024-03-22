@@ -45,8 +45,8 @@ const contactRoutesBelow720 = require('../server/routes/ContactFormBelow720Route
 const interiorRoutes = require('../server/routes/interiorCalculator')
  // const io = initializeSocket(server);
 
-const corsOptions = {
-  origin: ['https://develop.d3oibr1gmct06c.amplifyapp.com', 'http://3.108.65.255:3001'],
+ const corsOptions = {
+  origin: '*',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
