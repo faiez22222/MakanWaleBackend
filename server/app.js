@@ -85,7 +85,10 @@ app.use(express.urlencoded({ extended: true, limit: '100mb' })); // <- Parses UR
   
   // Connect to MongoDB
   connectDB();
-
+  app.use('/', (req, res , next) => {
+    res.send('All Good')
+    next();
+  });
   
   app.use("/files", express.static("files"));
   
